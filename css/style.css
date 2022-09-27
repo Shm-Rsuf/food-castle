@@ -52,7 +52,37 @@ header {
   background-color: #cf711f;
 }
 
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
 .btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
   display: none;
 }
 /****************************/
@@ -510,4 +540,68 @@ header {
 .cta-form input:focus,
 .cta-form select:focus {
   outline: 4px solid rgba(0, 0, 0, 0.2);
+}
+
+/****************************/
+/* FOOTER SECTION */
+/****************************/
+.footer {
+  background-color: #333;
+  color: #e67e22;
+  padding: 9.6rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  column-gap: 6.4rem;
+  font-size: 2rem;
+}
+
+.container-address {
+  line-height: 2;
+}
+
+.container-address .address {
+  font-size: 2.4rem;
+}
+
+.container-phone {
+  line-height: 1.8;
+}
+
+.container-phone .phone {
+  font-size: 2.4rem;
+}
+
+.container-email {
+  line-height: 1.8;
+}
+
+.container-email .email {
+  font-size: 2.4rem;
+}
+
+.container-social {
+  line-height: 1.8;
+}
+
+.container-social .social {
+  font-size: 2.4rem;
+}
+
+.container-social .social-icon {
+  margin-right: 1.2rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+  transform: all 0.3s;
+}
+
+.container-social .social-icon:hover {
+  color: #0f5ec5;
+}
+.container-social .instagram:hover {
+  color: crimson;
 }
