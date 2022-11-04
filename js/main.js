@@ -1,5 +1,4 @@
 /*MOBILE NAV OR HIDE*/
-
 const navButton = document.querySelector('.btn-mobile-nav');
 const header = document.querySelector('.header');
 
@@ -8,7 +7,6 @@ navButton.addEventListener('click', () => {
 })
 
 /*NAV-BAR STICKY EVENTS*/
-
 const sectionHero = document.querySelector('.section-hero');
 
 const obs = new IntersectionObserver(
